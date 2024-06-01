@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sarah-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="./images/logoSF.webp" class="logo" alt="logo"></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a class="active" href="shop.html">Shopping</a></li>
+                <li><a href="blog.html">MonBlog</a></li>
+                <li><a href="about.html">A-Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fal fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single">
+            <img src="images/t-shirt1.jpg" width="100%" id="MainImg" alt="grande image">
+
+            <div class="small-img-group">
+                <div class="small-img-col"> <img src="images/t-shirt5.jpeg" width="100%" class="small-img"></div>
+                <div class="small-img-col"> <img src="images/t-shirt2.jpeg" width="100%" class="small-img"></div>
+                <div class="small-img-col"> <img src="images/t-shirt6.jpeg" width="100%" class="small-img"></div>
+                <div class="small-img-col"> <img src="images/t-shirt8.jpeg" width="100%" class="small-img"></div>
+            </div>
+
+        </div>
+        <div class="single-pro-details">
+            <h6>Femme/ Léger t-shirt avec coeur</h6>
+            <h4> Super élégant</h4>
+            <h2>35€</h2>
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1">
+            <h4>Détails du produit</h4>
+            <span>Ce t-shirt est très agréable à porter et adapté à tout type d'occasion, pour toutes les saisons.<br>
+                Fabriqué à partir de lin léger et respirant, ce t-shirt vous gardera au frais même lors des journées les plus chaudes.<br>
+                Les manches courtes et la coupe féminine flatteuse ajoutent une touche de sophistication à votre tenue, <br>
+                que vous le portiez avec un short en jean décontracté ou une jupe fluide.<br><br>
+            </span>
+            <button>Add To Cart</button>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h5>Sign Up For Newsletters</h5>
+            <p>Get E-mail updates about our latest shop dans <span>special offers.></span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <script>
+        var MainImg=document.getElementById("MainImg");
+        var smallimg=document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick=function(){
+            MainImg.src=smallimg[0].src;
+        }
+        smallimg[1].onclick=function(){
+            MainImg.src=smallimg[1].src;
+        }
+        smallimg[2].onclick=function(){
+            MainImg.src=smallimg[2].src;
+        }
+        smallimg[3].onclick=function(){
+            MainImg.src=smallimg[3].src;
+        }
+    </script>
+    
+</body>
+
+</html>
